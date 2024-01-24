@@ -5,91 +5,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fish Chan</title>
-    <link href="./styles.css" rel="stylesheet"></link>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
+    </link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>Fish's Profile</h1>
-    <div class="my-intro">
-        <div class="avatar">
-            <img src="./images/fish.jpg" alt="我">
-        </div>
-        <div class="my-info">
-            <p id="name">Name: Fish Chan</p>
-            <p id="name">Email: berman82312@gmail.com</p>
-            <p>Contact me @<a href="https://www.linkedin.com/in/littlefish-chan-8b04b290/">LinkedIn</a></p>
+    <div class="container-fluid"
+        style="height: 400px; background-image: url('/images/cover.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+    </div>
+    <div class="container" style="padding-bottom: 80px;">
+        <div class="row">
+            <div class="avatar col-12 col-md-6 col-lg-4 text-center">
+                <img src="./images/fish.jpg" class="rounded-circle border border-white border-4 object-fit-cover"
+                    height="300" width="300" alt="我" style="margin-top: -150px">
+            </div>
+            <div class="my-intro col-12 col-md-6 col-lg-8">
+                <div class="row mt-5 px-5">
+                    <h1 class="mb-4 col-12">Fish Chan</h1>
+                    <div class="col-12">
+                        <div class="row">
+                            <p class="col-12 col-lg-6 col-xl-4">berman82312@gmail.com</p>
+                            <p class="col-12 col-lg-6 col-xl-8">Contact me @<a
+                                    href="https://www.linkedin.com/in/littlefish-chan-8b04b290/">LinkedIn</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <h2>Motto</h2>
-    <div class="motto-container">
-        <div class="motto-block">
-            <img src="./images/shawshank.jpg" alt="">
-            <h3>Andy Dufresne, "Shawshank Redemption"</h3>
-            <p class="motto">Get busy living or get busy dying.</p>
+    <div class="container-fluid py-5 text-white" style="background-color: #577C8A;">
+        <div class="row mb-5">
+            <div class="text-center col-12 col-md-4">
+                <h2>人生金句</h2>
+            </div>
         </div>
-        <div class="motto-block">
-            <img src="./images/forest-gump.webp" alt="">
-            <h3>Forrest Gump's mama</h3>
-            <P class="motto">Life is like a box of chocolates. You never know what you're gonna get.</p>
-        </div>
-        <div class="motto-block">
-            <img src="./images/luxun.jpg" alt="">
-            <h3>魯迅</h3>
-            <p class="motto" id="lu-xun">我沒有說過這句話</p>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="motto-block col-12 col-md-8 offset-md-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./images/shawshank.jpg" class="rounded"
+                                            style="width: 100%; aspect-ratio: 16/9; object-fit: cover;" alt="">
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <h3>Get busy living or get busy dying.</h3>
+                                        <p class="motto">Andy Dufresne, "Shawshank Redemption"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="motto-block col-12 col-md-8 offset-md-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./images/forest-gump.jpg" class="rounded"
+                                            style="width: 100%; aspect-ratio: 16/9; object-fit: cover;" alt="">
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <h3>Life is like a box of chocolates. You never know what you're gonna get.</h3>
+                                        <p class="motto">Forrest Gump's mama</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="motto-block col-12 col-md-8 offset-md-2">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./images/luxun.jpeg" class="rounded"
+                                            style="width: 100%; aspect-ratio: 16/9; object-fit: cover;" alt="">
+                                    </div>
+                                    <div class="col-12 mt-4">
+                                        <h3>我沒有說過這句話</h3>
+                                        <p class="motto">魯迅</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
-    <div>
-        <h2>Experiences</h2>
-        <article>
-            <h3>OurSong - App/Web Developer</h3>
-            <p style="font-size: 20px; color: darkolivegreen; text-decoration: underline;">May 2019 - Present</p>
-            <p>OurSong is a platform for creators to upload, trade their digital creations and provide an easy way to
-                maintain the royalties. As well as building communities for artists and fans.</p>
-            <p>You can <a href="https://www.oursong.com">click here to <b>OurSong's website</b></a>.</p>
-            <ul>
-                <li>
-                    <p>
-                        Developed a mini player for playing <span>video</span> and <span>audio</span> projects while at
-                        the same time users can
-                        navigate around other pages in the app.
-                    <ul>
-                        <li>
-                            Average 70 users and 200 plays per week.
-                        </li>
-                    </ul>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Built a <span>Discord-like</span> chat app functionalities and support authorization checking
-                        for different
-                        chat group.
-                    <ul>
-                        <li>We have more than 3000 chat groups, more than 25,000 chat rooms created and more than
-                            670,000 messages generated.</li>
-                    </ul>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        Designed the guideline and modularized our design components used on each page to speed up our
-                        development.
-                    <ul>
-                        <li>
-                            We’ve extracted up to 9 categories and more than 50 components from our pages.
-                        </li>
-                        <li>
-                            For example, to change a call to action button layout, we can change one single component
-                            rather than revise 13 different pages which have used this button.
-                        </li>
-                    </ul>
-                    </p>
-                </li>
-            </ul>
-        </article>
+    <div class="container my-5">
+        <h2 class="my-5">Experiences</h2>
+        <div class="row mx-2 mx-sm-0 experience-item border border-1 rounded">
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <svg width="250" height="250" viewBox="0 0 38 38" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.5587 26.3505C23.1305 26.3505 21.2411 25.3792 19.4087 23.1143L21.0819 21.5513C22.3225 23.1715 23.9426 24.0856 25.5587 24.0856C27.6644 24.0856 29.1744 23.0613 29.1744 21.6044C29.1744 20.7392 28.6888 20.0414 27.6114 19.3395L22.1634 15.887C20.5432 14.8627 19.6291 13.5119 19.6291 11.7857C19.6291 9.08817 22.1634 6.92936 25.3995 6.92936C27.9338 6.92936 30.1457 8.11691 31.5495 10.1655L29.8763 11.6755C28.5296 10.0023 27.0727 9.19428 25.4526 9.19428C23.3468 9.19428 21.8369 10.1655 21.8369 11.5694C21.8369 12.5406 22.3225 13.2956 23.3468 13.9445L28.7949 17.3969C30.468 18.4213 31.3863 19.772 31.3863 21.335C31.3863 24.6243 28.5827 26.3505 25.5587 26.3505ZM11.8549 20.4168C14.0668 20.4168 15.793 18.7967 15.793 16.642C15.793 14.3771 14.1199 12.8671 11.8549 12.8671C9.59002 12.8671 8.13313 14.4301 8.13313 16.642C8.13313 18.8538 9.69613 20.4168 11.8549 20.4168ZM11.8549 22.6817C8.29637 22.6817 5.75803 20.2005 5.75803 16.6379C5.75803 13.0752 8.29229 10.594 11.8549 10.594C15.4176 10.594 17.9518 13.0752 17.9518 16.6379C17.9518 20.2005 15.4176 22.6817 11.8549 22.6817ZM18.9231 33.1452C16.4419 33.1452 14.4994 32.174 12.5038 29.9621L14.177 28.342C15.1482 29.7458 17.2499 30.8762 18.9231 30.8762C20.5963 30.8762 22.698 29.7417 23.6692 28.342L25.3424 29.9621C23.3468 32.174 21.4043 33.1452 18.9231 33.1452ZM18.9231 37.8383C30.0355 37.8383 37.8056 30.0682 37.8056 18.9559C37.8056 7.84349 30.0355 0.0774841 18.9231 0.0774841C7.81074 0.0774841 0.0406494 7.84757 0.0406494 18.9599C0.0406494 30.0723 7.81074 37.8424 18.9231 37.8424V37.8383Z"
+                                fill="#2EFAFF" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-5 mt-md-0">
+                <div class="row mb-4">
+                    <div class="col-12 d-flex align-items-center">
+                        <h3><a href="https://www.oursong.com">OurSong</a></h3>
+                        <p class="ms-4 mb-0">May 2019 - Present</p>
+                    </div>
+                </div>
+                <h4>App/Web Developer</h4>
+                <p>OurSong is a platform for creators to upload, trade their digital creations and provide an
+                    easy
+                    way
+                    to
+                    maintain the royalties. As well as building communities for artists and fans.</p>
+                <div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#oursongModal">
+                        More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div style="height: 50px;"></div>
+        <div class="row mx-2 mx-sm-0 experience-item border border-1 rounded">
+            <div class="col-12 col-md-6">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <svg height="99" style="background-color: #373c46" viewBox="0 0 585.19 206.52" width="267"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m180.09 114.58a4.47 4.47 0 0 0 -5.39-.42l-52.64 33.92-84.43-75.08c-1.71-1.52-4.41-.24-4.41 3.31v12.4a10.58 10.58 0 0 0 3.55 7.89l83.06 73.89a2.63 2.63 0 0 0 3.17.23l8.49-5.56c.07-.05.07-.13.11-.2l47.54-30.63c3.48-6.18 4.68-16.41.95-19.75z"
+                                fill="#ff3c00" />
+                            <g fill="#fff">
+                                <path
+                                    d="m169.07 57.84c-10-8.13-29.89-8.21-39-1.81-.58-5.65-1.95-9.78-7.27-14.54-8.82-8.11-27-8.44-40.68.53l-24.82 16.24-2.51 1.65a7.63 7.63 0 0 0 -.9 12.09l63.25 55.31a8.92 8.92 0 0 0 5.11 2.11 8.36 8.36 0 0 0 5.27-1.2c.13-.09.22-.19.34-.28a9.11 9.11 0 0 0 1.86-.9l39.18-25.68c17.26-11.31 16.74-30.04.17-43.52zm-10.13 34.62-35.81 23.46-45.03-38.92-10.88-9.81 24.78-16.27c5.27-3.57 15.33-6.68 19.92-2.36 7.31 6.2 7.73 11.77-3.33 19.69-3 2-3.17 5.53-.41 8a9 9 0 0 0 10.37.91l11.52-7.55c12.43-9.78 23.92-7.47 30.66-2.12 4.34 3.44 13.86 13.71-1.83 25z" />
+                                <path
+                                    d="m236.24 169.07c-2.51 0-3.68-1.21-3.68-3.83v-19.94a1.79 1.79 0 0 1 2-1.82 1.76 1.76 0 0 1 2 1.79v19.41c0 .37.11.62.66.62h11.08a1.73 1.73 0 0 1 1.76 1.85 1.8 1.8 0 0 1 -1.76 1.92z" />
+                                <path
+                                    d="m259.06 169.07c-2.52 0-3.68-1.21-3.68-3.83v-17.71c0-2.63 1.16-3.86 3.68-3.86h11.86a1.68 1.68 0 0 1 1.73 1.82 1.7 1.7 0 0 1 -1.73 1.86h-11.05c-.45 0-.59.08-.59.62v6h10.23a1.67 1.67 0 0 1 1.7 1.82 1.71 1.71 0 0 1 -1.7 1.8h-10.23v7.24c0 .28.05.53.68.53h11.24a1.69 1.69 0 0 1 1.74 1.83 1.72 1.72 0 0 1 -1.74 1.85z" />
+                                <path
+                                    d="m296.37 169.26c-1.66 0-2.28-.79-3-2l-8.37-13.48c-.81-1.29-1.73-3-2.48-4.47.14 2.35.25 5.46.25 8.55v9.64a2 2 0 0 1 -3.93 0v-21.66a2.26 2.26 0 0 1 2.46-2.36 3 3 0 0 1 2.94 1.73l7.91 12.84c.95 1.56 2.06 3.56 2.94 5.29-.15-2.28-.3-5.42-.3-8.59v-9.51a1.74 1.74 0 0 1 2-1.76 1.72 1.72 0 0 1 2 1.76v21.57a2.21 2.21 0 0 1 -2.42 2.45z" />
+                                <path
+                                    d="m310.08 169.07c-2.51 0-3.68-1.21-3.68-3.83v-17.71c0-2.63 1.17-3.86 3.68-3.86h5.59c7.19 0 11.49 4.65 11.49 12.43 0 8.13-4.3 13-11.49 13zm.81-21.75a.51.51 0 0 0 -.56.56v16.92c0 .5.21.59.53.59h4.65c4.82 0 7.59-3.37 7.59-9.25s-2.59-8.82-7.5-8.82z" />
+                                <path
+                                    d="m354.36 169.58c-4.83 0-8.33-3.16-8.33-7.51 0-3.87 2.22-5.87 5.62-7.56l-.18-.18a7.14 7.14 0 0 1 -2.39-5.13 5.51 5.51 0 0 1 2.73-4.9 7.79 7.79 0 0 1 4.18-1.07c4.22 0 6.94 2.24 6.94 5.72a5.9 5.9 0 0 1 -2.51 4.93 11.87 11.87 0 0 1 -2.81 1.68l5.06 5.22a14.62 14.62 0 0 0 1.67-4.8 1.59 1.59 0 0 1 1.66-1.32 2.9 2.9 0 0 1 .48.05c1 .24 1.53.83 1.53 1.65a2 2 0 0 1 0 .45 17.32 17.32 0 0 1 -2.78 6.56l2.78 2.76a1.66 1.66 0 0 1 .48 1.18 1.93 1.93 0 0 1 -.73 1.5 2.46 2.46 0 0 1 -1.4.48 1.65 1.65 0 0 1 -1.27-.56l-2.3-2.49a10.88 10.88 0 0 1 -8.43 3.34zm-.27-12.5c-3.18 1.49-4.16 2.66-4.16 4.9s2 4.1 4.71 4.1a7.71 7.71 0 0 0 5.68-2.44zm1.9-10.51a2.86 2.86 0 0 0 -3.14 2.82c0 1.23.71 2 1.6 2.92l.71.73a13.64 13.64 0 0 0 2.68-1.34 3 3 0 0 0 1.32-2.6c0-1.61-1.16-2.53-3.16-2.53z" />
+                                <path
+                                    d="m391.88 169.07c-2.52 0-3.64-1.18-3.64-3.83v-17.71c0-2.67 1.12-3.86 3.64-3.86h7.41c4.76 0 7.6 2.39 7.6 6.41 0 2.64-1 4.46-3 5.53 2.55 1 3.89 3.1 3.89 6.21 0 4.54-3 7.25-8.1 7.25zm.22-4.11c0 .48.16.56.53.56h6.66c2.91 0 4.39-1.34 4.39-4s-1.5-4-4.45-4h-7.13zm7-11c2.41 0 3.8-1.29 3.8-3.55s-1.27-3.23-3.86-3.23h-6.53c-.21 0-.44.05-.44.53v6.29z" />
+                                <path
+                                    d="m424.58 169.58c-7 0-11.46-5.19-11.46-13.22s4.5-13.16 11.46-13.16 11.4 5.17 11.4 13.19-4.47 13.19-11.4 13.19zm0-22.73c-4.56 0-7.4 3.65-7.4 9.54s2.91 9.5 7.4 9.5 7.35-3.62 7.35-9.69c0-5.68-2.93-9.35-7.35-9.35z" />
+                                <path
+                                    d="m460.05 169.26a1.69 1.69 0 0 1 -1.67-1.12l-.79-2c-2.31-6.24-3.09-8-5.83-8h-5.3v9.38a1.74 1.74 0 0 1 -1.92 1.79 1.78 1.78 0 0 1 -2-1.82v-19.96c0-2.63 1.16-3.86 3.67-3.86h7.35c4.72 0 7.54 2.52 7.54 6.75a6.16 6.16 0 0 1 -4.15 6.25c1.42 1.07 2.46 3.41 4.37 8.24l.78 1.84a2.34 2.34 0 0 1 .13.72 1.75 1.75 0 0 1 -1.4 1.69 3 3 0 0 1 -.78.1zm-6.85-14.7c2.4 0 3.95-1.45 3.95-3.7 0-2.41-1.26-3.64-3.76-3.64h-6.39c-.37 0-.56.1-.56.63v6.71z" />
+                                <path
+                                    d="m485.78 169.26a1.69 1.69 0 0 1 -1.67-1.12l-.79-2c-2.31-6.24-3.09-8-5.83-8h-5.3v9.38a1.74 1.74 0 0 1 -1.92 1.79 1.78 1.78 0 0 1 -2-1.82v-19.96c0-2.63 1.16-3.86 3.67-3.86h7.35c4.72 0 7.54 2.52 7.54 6.75a6.16 6.16 0 0 1 -4.15 6.25c1.42 1.07 2.46 3.41 4.37 8.24l.78 1.84a2.34 2.34 0 0 1 .13.72 1.75 1.75 0 0 1 -1.4 1.69 3 3 0 0 1 -.78.1zm-6.85-14.7c2.4 0 3.95-1.45 3.95-3.7 0-2.41-1.26-3.64-3.76-3.64h-6.37c-.37 0-.56.1-.56.63v6.71z" />
+                                <path
+                                    d="m504.44 169.58c-7 0-11.46-5.19-11.46-13.22s4.5-13.16 11.46-13.16 11.4 5.17 11.4 13.19-4.47 13.19-11.4 13.19zm0-22.73c-4.56 0-7.4 3.65-7.4 9.54s2.91 9.5 7.4 9.5 7.34-3.62 7.34-9.69c0-5.68-2.88-9.35-7.34-9.35z" />
+                                <path
+                                    d="m543.17 169.26a2.37 2.37 0 0 1 -2.53-1.9l-3.58-14.09c-.27-1.05-.5-2.33-.69-3.55-.21 1.2-.44 2.45-.72 3.49l-3.73 14.19a2.37 2.37 0 0 1 -2.53 1.86 2.45 2.45 0 0 1 -2.56-1.88l-5.94-21.61a3.08 3.08 0 0 1 -.08-.56c0-.88.64-1.51 1.72-1.69a2.28 2.28 0 0 1 .52 0 1.74 1.74 0 0 1 1.81 1.37l3.92 14.81c.24.91.47 2.18.68 3.4.21-1.21.45-2.46.69-3.37l3.74-14.47a2.28 2.28 0 0 1 2.5-1.74 2.25 2.25 0 0 1 2.44 1.77l3.74 14.47c.22.88.45 2.17.66 3.43.23-1.26.48-2.54.71-3.4l3.95-14.91a1.78 1.78 0 0 1 1.87-1.36 2 2 0 0 1 .53.05c1 .17 1.67.79 1.67 1.65a1.87 1.87 0 0 1 -.07.49l-6.16 21.74a2.41 2.41 0 0 1 -2.56 1.81z" />
+                                <path
+                                    d="m239.85 101.35c-1.85 0-3-.92-3-2.4v-27.27a54.77 54.77 0 0 1 .4-6.13 38 38 0 0 1 -3.14 4.89 2.68 2.68 0 0 1 -2.24 1.19 3.68 3.68 0 0 1 -2.29-.91 2.69 2.69 0 0 1 -1-2.1 4.09 4.09 0 0 1 .74-2.12c5.49-6.45 10.08-15.74 12.68-25.5a2.54 2.54 0 0 1 2.65-2.08 4.61 4.61 0 0 1 .86.1c1.63.36 2.47 1.26 2.47 2.5a3.53 3.53 0 0 1 -.15.91 88.1 88.1 0 0 1 -4.94 13.25v43.3c.03 1.47-1.12 2.37-3.04 2.37zm16.62-1.53c-4 0-5.92-1.78-5.92-5.46v-9.11c0-3.63 1.94-5.4 5.92-5.4h24.88c4 0 5.93 1.77 5.93 5.4v9.11c0 3.68-1.94 5.46-5.93 5.46zm1.4-14.76c-1.25 0-1.45.33-1.45 1.12v7.18c0 1 .3 1.19 1.45 1.19h22.13c1.16 0 1.46-.24 1.46-1.19v-7.18c0-.79-.2-1.12-1.46-1.12zm-4.65-9.45c-1.28 0-2.14-1-2.14-2.6s.84-2.6 2.14-2.6h31.39c1.26 0 2.07 1 2.07 2.6s-.83 2.6-2.07 2.6zm0-9.37c-1.28 0-2.14-1-2.14-2.6a2.33 2.33 0 0 1 2.14-2.64h31.32c1.28 0 2.14 1 2.14 2.61a2.33 2.33 0 0 1 -2.14 2.6zm-4.33-9.38c-1.31 0-2.2-1.1-2.2-2.73s.86-2.74 2.2-2.74h41.24c1.34 0 2.2 1 2.2 2.67s-.86 2.8-2.2 2.8zm4.79-9.64c-1.34 0-2.2-1-2.2-2.67s.86-2.74 2.2-2.74h30.79c1.34 0 2.21 1.07 2.21 2.74s-.87 2.67-2.21 2.67z" />
+                                <path
+                                    d="m318.32 100.75a3.79 3.79 0 0 1 -1.68-.44 3.14 3.14 0 0 1 -1.79-2.76 2.81 2.81 0 0 1 .48-1.59c4.76-7.08 5.7-17 5.84-34 .06-4.13.13-8.85.13-14.43 0-4.22 2-6.19 6.39-6.19h39.91c4.36 0 6.39 2 6.39 6.19v46.23c0 4.53-2.74 6.73-8.39 6.73a49.23 49.23 0 0 1 -8.33-.67 2.6 2.6 0 0 1 -2.27-2.67 2.13 2.13 0 0 1 .18-1 2.45 2.45 0 0 1 2.38-2.15 3 3 0 0 1 .78.08 34.54 34.54 0 0 0 6.46.72c3.05 0 3.19-.51 3.19-2.26v-13.27h-18.47v17.73c0 1.42-1.21 2.34-3.07 2.34s-2.94-.94-2.94-2.34v-17.73h-16.92c-.88 8.8-2.61 14.93-5.61 19.86a3 3 0 0 1 -2.66 1.62zm49.68-27.08v-10.56h-18.48v10.56zm-24.48 0v-10.56h-16.28v.53c0 3.54-.11 6.9-.24 10zm24.48-16.09v-8.91c0-1.24-.3-1.52-1.59-1.52h-16.89v10.43zm-24.48 0v-10.43h-14.43c-1.33 0-1.66.3-1.66 1.52 0 3.27 0 6.18-.05 8.91z" />
+                                <path
+                                    d="m431.77 101.62c-1.84 0-3.07-1-3.07-2.4v-32.22h-13.43c-1.39 0-1.72.29-1.72 1.58v24.32c0 1.44-1.28 2.4-3.2 2.4s-3.06-.94-3.06-2.4v-25.08c0-4.31 2.15-6.32 6.78-6.32h14.63v-4.45c0-1.41 1.26-2.4 3.07-2.4s3.2 1 3.2 2.4v4.45h15.75c4.55 0 6.66 2 6.66 6.32v19.29c0 5.11-2.29 7.19-7.92 7.19a25.93 25.93 0 0 1 -7.12-.75 2.57 2.57 0 0 1 -1.94-2.65 4.69 4.69 0 0 1 .15-1c.47-1.78 1.56-2.15 2.39-2.15a3.72 3.72 0 0 1 .85.15 21 21 0 0 0 4.87.65c2.49 0 2.58-.42 2.58-2.19v-17.74c0-1.26-.37-1.58-1.78-1.58h-14.46v32.18c0 1.44-1.32 2.4-3.23 2.4zm-27.67-47.55c-1.42 0-2.34-1.18-2.34-3s.94-2.8 2.34-2.8h24.6v-7c0-1.48 1.2-2.4 3.13-2.4s3.2.89 3.2 2.4v7h26c1.46 0 2.4 1.09 2.4 2.8s-1 3-2.4 3z" />
+                                <path
+                                    d="m518.54 102.08a2.48 2.48 0 0 1 -2.8-2.53v-7.65c0-1.32.13-3 .26-4.32-5.81 5.84-13.51 9.91-24.07 12.76a4.74 4.74 0 0 1 -1 .15 2.71 2.71 0 0 1 -2.72-2.24 5.1 5.1 0 0 1 -.15-1 2.49 2.49 0 0 1 2.18-2.59c8.38-1.89 15.33-5.06 20.68-9.44h-20.57c-1.36 0-2.28-1.07-2.28-2.67a2.26 2.26 0 0 1 2.28-2.55h25.39v-3.45h-13.74c-4 0-5.72-1.69-5.72-5.47v-10.3a45.69 45.69 0 0 1 .26-4.92 48.36 48.36 0 0 1 -3.94 3.68 3.05 3.05 0 0 1 -2 .78 3 3 0 0 1 -2.14-.94 2.84 2.84 0 0 1 -.86-1.74 3.24 3.24 0 0 1 1.3-2.62 49.26 49.26 0 0 0 12.71-15 3 3 0 0 1 2.69-1.66 4 4 0 0 1 1.27.23 2.4 2.4 0 0 1 1.93 2.24 2.9 2.9 0 0 1 -.48 1.53l-.24.37c-.45.71-1 1.62-1.76 2.61 1-.1 2-.12 2.67-.12h10.44a44.54 44.54 0 0 0 3-5.25 2.66 2.66 0 0 1 2.49-1.47 6.55 6.55 0 0 1 .94.1c1.49.27 2.33 1.07 2.33 2.1a2.2 2.2 0 0 1 -.26 1 27.13 27.13 0 0 1 -2 3.51h19.91c1.4 0 2.2.92 2.2 2.53a2.18 2.18 0 0 1 -2.2 2.47h-21.6v3.91h18.61a2.07 2.07 0 0 1 2 2.33c0 1.44-.77 2.34-2 2.34h-18.61v4h18.55a2.35 2.35 0 0 1 0 4.67h-18.55v4.25h21.61a2.14 2.14 0 0 1 2.2 2.4 2.18 2.18 0 0 1 -2.2 2.47h-23.07v3.42h25.93a2.24 2.24 0 0 1 2.27 2.53c0 1.6-.92 2.67-2.27 2.67h-21a47.76 47.76 0 0 0 21.39 9.3 2.53 2.53 0 0 1 2.26 2.66 3.54 3.54 0 0 1 -.15.92 2.64 2.64 0 0 1 -2.66 2.35 4.41 4.41 0 0 1 -.88-.11c-7.26-1.62-17.26-5.13-25.14-12.81.11 1.45.23 3.08.23 4.4v7.72c.02 1.46-1.16 2.45-2.92 2.45zm-16.54-31.66c0 .83.24 1.26 1.52 1.26h13.83v-4.25h-15.35zm15.35-7.66v-4h-15.35v4zm0-8.64v-3.91h-13.84c-1.28 0-1.52.42-1.52 1.19v2.72z" />
+                            </g>
+                            <path d="m546.72 124.73h-312.72a3.36 3.36 0 0 1 0-6.72h312.72a3.36 3.36 0 1 1 0 6.72z"
+                                fill="#ff3c00" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center mt-5 mt-md-0">
+                <div class="row mb-4">
+                    <div class="col-12 d-flex align-items-center">
+                        <h3><a href="https://www.oursong.com">LnB</a></h3>
+                        <p class="ms-4 mb-0">May 2016 - Mar 2017</p>
+                    </div>
+                </div>
+                <h4>Web Backend Developer</h4>
+                <p>LnB is a P2P platform. I am responsible for developing and maintaining official website</p>
+                <div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LnBModal">
+                        More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- OurSong Modal -->
+        <div class="modal" tabindex="-1" id="oursongModal" aria-labelledby="oursongModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Experience at OurSong</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                <p>
+                                    Developed a mini player for playing <span>video</span> and <span>audio</span>
+                                    projects while at
+                                    the same time users can
+                                    navigate around other pages in the app.
+                                <ul>
+                                    <li>
+                                        Average 70 users and 200 plays per week.
+                                    </li>
+                                </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Built a <span>Discord-like</span> chat app functionalities and support authorization
+                                    checking
+                                    for different
+                                    chat group.
+                                <ul>
+                                    <li>We have more than 3000 chat groups, more than 25,000 chat rooms created and more
+                                        than
+                                        670,000 messages generated.</li>
+                                </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Designed the guideline and modularized our design components used on each page to
+                                    speed up our
+                                    development.
+                                <ul>
+                                    <li>
+                                        We’ve extracted up to 9 categories and more than 50 components from our pages.
+                                    </li>
+                                    <li>
+                                        For example, to change a call to action button layout, we can change one single
+                                        component
+                                        rather than revise 13 different pages which have used this button.
+                                    </li>
+                                </ul>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- LnB Modal -->
+        <div class="modal" tabindex="-1" id="LnBModal" aria-labelledby="LnBLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Experience at LnB</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>
+                                <p>
+                                    Ran Scrum and determined works in each Sprint according to the requirements presented by the management team.
+                                <ul>
+                                    <li>
+                                        Developed debt splitting logic which changed the lend and borrow workflow from
+                                        1:1 only to also allow 1:many.
+                                    </li>
+                                    <li>Optimize the repayment system to show detailed numbers and calculation on
+                                        principle, interest and current repayment status.</li>
+                                </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Cooperated with frontend developers.
+                                <ul>
+                                    <li>Used GA (with GTM) to track user data of the website.</li>
+                                </ul>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Conducted user interviews to enhance the overall user experience of the website.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <footer class="text-white d-flex justify-content-center align-items-center"
+        style="background-color: #0B1013; height: 150px;">
+        Created by Fish
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 
